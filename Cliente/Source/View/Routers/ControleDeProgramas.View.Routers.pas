@@ -19,7 +19,8 @@ var
 implementation
 
 uses
-  ControleDeProgramas.View.Pages.Principal;
+  ControleDeProgramas.View.Pages.Principal,
+  ControleDeProgramas.View.Pages.Filmes;
 
 { TRouter }
 
@@ -28,6 +29,7 @@ begin
   TRouter4D
     .Switch
       .Router('Principal',TPagePrincipal)
+      .Router('Filmes',TPageFilmes)
 
 end;
 

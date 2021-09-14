@@ -22,10 +22,6 @@ object FormPrincipal: TFormPrincipal
     Align = alClient
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 264
-    ExplicitTop = 264
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlMenu: TPanel
       Left = 1
       Top = 1
@@ -34,9 +30,6 @@ object FormPrincipal: TFormPrincipal
       Align = alLeft
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 72
-      ExplicitTop = 152
-      ExplicitHeight = 41
       object SpeedButton1: TSpeedButton
         Left = 1
         Top = 1
@@ -44,6 +37,7 @@ object FormPrincipal: TFormPrincipal
         Height = 72
         Align = alTop
         Caption = 'Principal'
+        OnClick = SpeedButton1Click
       end
       object SpeedButton2: TSpeedButton
         Left = 1
@@ -62,10 +56,6 @@ object FormPrincipal: TFormPrincipal
       Align = alClient
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 256
-      ExplicitTop = 0
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object pnlTopo: TPanel
         Left = 1
         Top = 1
@@ -74,7 +64,6 @@ object FormPrincipal: TFormPrincipal
         Align = alTop
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 700
       end
       object pnlPrincipal: TPanel
         Left = 1
@@ -84,10 +73,6 @@ object FormPrincipal: TFormPrincipal
         Align = alClient
         ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = 264
-        ExplicitTop = 264
-        ExplicitWidth = 185
-        ExplicitHeight = 41
       end
     end
   end

@@ -1,9 +1,10 @@
 object PagePrincipal: TPagePrincipal
   Left = 0
   Top = 0
+  BorderStyle = bsNone
   Caption = 'PagePrincipal'
-  ClientHeight = 231
-  ClientWidth = 505
+  ClientHeight = 270
+  ClientWidth = 521
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,13 +17,11 @@ object PagePrincipal: TPagePrincipal
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 505
+    Width = 521
     Height = 41
     Align = alTop
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 168
-    ExplicitTop = 112
-    ExplicitWidth = 185
+    ExplicitWidth = 505
   end
 end

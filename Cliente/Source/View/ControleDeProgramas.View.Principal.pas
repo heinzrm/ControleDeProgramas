@@ -27,6 +27,7 @@ type
     SpeedButton1: TSpeedButton;
     SpeedButton2: TSpeedButton;
     procedure FormCreate(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,7 +42,8 @@ implementation
 
 uses
   ControleDeProgramas.View.Styles.Colors,
-  ControleDeProgramas.View.Pages.Principal;
+  ControleDeProgramas.View.Pages.Principal,
+  ControleDeProgramas.View.Pages.Filmes;
 
 {$R *.dfm}
 
@@ -55,6 +57,11 @@ end;
 function TFormPrincipal.Render: TForm;
 begin
   Result := Self;
+end;
+
+procedure TFormPrincipal.SpeedButton1Click(Sender: TObject);
+begin
+  TRouter4D.Render<TPageFilmes>.SetElement(pnlPrincipal,pnlMain );
 end;
 
 procedure TFormPrincipal.UnRender;
